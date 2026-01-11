@@ -26,11 +26,15 @@ export default function ButtonComponent() {
       </div>
 
       <div>
-        <button onClick={subtractClickCounter}>Restar click</button>
+        <button onClick={subtractClickCounter} hidden={clickCounter <= 0}>
+          Restar click
+        </button>
       </div>
 
       <div>
-        <button onClick={resetClickCounter}>Reset click counter</button>
+        <button onClick={resetClickCounter} hidden={clickCounter <= 0}>
+          Reset click counter
+        </button>
       </div>
     </div>
   );
