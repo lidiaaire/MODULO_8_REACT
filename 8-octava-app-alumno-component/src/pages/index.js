@@ -1,6 +1,6 @@
 import AlumnoInfoComponent from "../components/AlumnosInfoComponent/AlumnoInfoComponent";
 import { getAlumnos } from "./api/alumnos";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const alumnos = getAlumnos();
